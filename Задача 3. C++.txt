@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+double calculateCircumscribedRadiusOctagon(double a) {
+
+    return a * sqrt(1 + (sqrt(2) / 2));
+
+}
+
+int main() {
+
+    double a = 16.74;  // Заданная длина стороны
+    double R8 = calculateCircumscribedRadiusOctagon(a);
+
+    std::cout << "Радиус описанной окружности для восьмиугольника: " << R8 << std::endl;
+
+    return 0;
+
+}
