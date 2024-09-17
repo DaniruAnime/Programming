@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+double calculateCircumscribedRadiusPentagon(double a) {
+
+    return a * sqrt((1.0 / 2) + (sqrt(5) / 10));
+
+}
+
+int main() {
+
+    double a = 16.74;  // Заданная длина стороны
+    double R5 = calculateCircumscribedRadiusPentagon(a);
+
+    std::cout << "Радиус описанной окружности для пятиугольника: " << R5 << std::endl;
+
+    return 0;
+
+}
