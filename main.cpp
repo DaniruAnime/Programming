@@ -5,37 +5,27 @@ using namespace std;
 
 // Метод для треугольника
 double calculateCircumscribedRadiusTriangle(double a) {
-
     return (a * sqrt(3)) / 3;
-
 }
 
 // Метод для пятиугольника
 double calculateCircumscribedRadiusPentagon(double a) {
-
     return a * sqrt((1.0 / 2) + (sqrt(5) / 10));
-
 }
 
 // Метод для восьмиугольника
 double calculateCircumscribedRadiusOctagon(double a) {
-
     return a * sqrt(1 + (sqrt(2) / 2));
-
 }
 
 // Метод для десятиугольника
 double calculateCircumscribedRadiusDecagon(double a) {
-
     return (a / 2) * (1 + sqrt(5));
-
 }
 
 // Метод для произвольных сторон
 double calculateCircumscribedRadiusPolygon(double a, int n) {
-
     return a / (2 * sin(M_PI / n));
-
 }
 
 int main() {
